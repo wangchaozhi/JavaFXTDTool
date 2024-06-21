@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox spacing="10" fx:controller="com.wangchaozhi.LoginController" alignment="CENTER" xmlns:fx="http://javafx.com/fxml/1">
+    <HBox spacing="5" alignment="CENTER_LEFT">
+        <Label text="ip地址:" minWidth="50">
+            <padding>
+                <Insets top="0" right="0" bottom="0" left="10"/>
+            </padding>
+        </Label>
+        <TextField fx:id="addressField" promptText="请输入地址" HBox.hgrow="ALWAYS"/>
+        <Region HBox.hgrow="ALWAYS"/>
+    </HBox>
+    <HBox spacing="5" alignment="CENTER_LEFT">
+        <Label text="端口:" minWidth="50">
+            <padding>
+                <Insets top="0" right="0" bottom="0" left="10"/>
+            </padding>
+        </Label>
+        <TextField fx:id="portField" promptText="6030" HBox.hgrow="ALWAYS"  />
+        <Region HBox.hgrow="ALWAYS"/>
+    </HBox>
+    <HBox spacing="5" alignment="CENTER_LEFT">
+        <Label text="用户名:" minWidth="50">
+            <padding>
+                <Insets top="0" right="0" bottom="0" left="10"/>
+            </padding>
+        </Label>
+        <TextField fx:id="usernameField" promptText="请输入用户名" HBox.hgrow="ALWAYS"/>
+        <Region HBox.hgrow="ALWAYS"/>
+    </HBox>
+    <HBox spacing="5" alignment="CENTER_LEFT">
+        <Label text="密码:" minWidth="50">
+            <padding>
+                <Insets top="0" right="0" bottom="0" left="10"/>
+            </padding>
+        </Label>
+        <PasswordField fx:id="passwordField" promptText="请输入密码" HBox.hgrow="ALWAYS"/>
+        <Region HBox.hgrow="ALWAYS"/>
+    </HBox>
+    <CheckBox fx:id="rememberMeCheckBox" text="记住密码"/>
+
+    <Button text="登录" onAction="#handleLogin" VBox.vgrow="NEVER"/>
+</VBox>
